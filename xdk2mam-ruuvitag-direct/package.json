@@ -1,0 +1,20 @@
+{
+  "name": "ej-ble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base91": "0.0.5",
+    "crypto": "^1.0.1",
+    "iota.lib.js": "^0.4.7",
+    "noble": "^1.9.1",
+    "node-beacon-scanner": "^0.1.1",
+    "xdk2mam": "^1.0.7"
+  }
+}
