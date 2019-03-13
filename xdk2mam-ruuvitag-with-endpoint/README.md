@@ -31,10 +31,11 @@ let iota = new IOTA({
   'provider': 'http://heimelaga.vodka:14265'
 });
 ```
-Once this modifications are done, save the file and let's run it to start our Node.js Gateway
+Once this modifications are done, save the file and let's run it to start our Node.js Gateway. 
+Notice that the script **requires a parameter to indicate the interval defined in milliseconds in which the data will be published to the Tangle.** We will be doing so every 30 seconds.
 
 ```
-node server.js
+node server.js 30000
 ```
 Now that we have our server listening at 192.168.1.10, let's head to the Ruuvi Station settings to prepare the app.
 
