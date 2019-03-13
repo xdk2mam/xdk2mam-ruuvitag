@@ -44,4 +44,3 @@ That's it! Check your console to see how the beacon sensor's data are printed to
 
 
 
-
