@@ -1,10 +1,10 @@
 # XDK2MAM package for RuuviTag with Ruuvi Station and Gateway
 
-The following method will allow RuuviTag users to send sensor's data to the [Rubi Station](https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en) App on a mobile device and set a Gateway address on the app settings that will be in charge of publishing the datasets to th Tangle.
+The following method will allow RuuviTag users to send sensor's data to the [Ruuvi Station](https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en) App on a mobile device and set a Gateway address on the app settings that will be in charge of publishing the datasets to th Tangle.
 
 This approach has it pros and cons: while you do not need to deal with Noble to handle the BLE listener, you need an extra BLE capable device running the Ruuvi Station app to get the data and yet another instance to act as the Gateway that will get the app data to decentralize it using MAM.
 
-So, let's start by downloading the [Rubi Station](https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en) app and removing the plastic piece from the beacon batterie to turn it on.
+So, let's start by downloading the [Ruuvi Station](https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en) app and removing the plastic piece from the beacon batterie to turn it on.
 As soon as you start the app you will be able to add your beacon to see its sensors working live.
 
 ![Ruuvi Station App](https://xdk2mam.io/assets/images/ruuvitag_1.png)
