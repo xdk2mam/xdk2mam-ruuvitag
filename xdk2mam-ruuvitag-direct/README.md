@@ -34,7 +34,7 @@ That's all! But before you run the **app.js** script to start the BLE listener t
 - **Noble** requires to run the script as root, so you will need to sudo or become a root user. 
 - The **app.js** script requires a parameter to scpecify the interval in milliseconds used to release data. 
 
-So, to start the magic, assuming you want data from the RuuviTag sensors every 30 minutes, you should have to type
+So, to start the magic, assuming you want data from the RuuviTag sensors every 30 seconds, you should have to type
 
 ```
 sudo node app.js 30000
