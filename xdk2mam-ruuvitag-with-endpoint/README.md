@@ -36,11 +36,19 @@ Once this modifications are done, save the file and let's run it to start our No
 ```
 node server.js
 ```
-Now that we have our server listening at 192.168.1.10, let's head to the Ruuvi Station settings to define our Gateway 
+Now that we have our server listening at 192.168.1.10, let's head to the Ruuvi Station settings to prepare the app.
 
-![Ruuvi Station App Gateway](https://xdk2mam.io/assets/images/ruuvitag_2.png)
+First of all, we need to go into Background Scanning Settings to select the option **Continuous background scanning** which will keep getting data from the beacon and sending it to the defined Gateway even if we close the Ruuvi Station app.
 
-That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle.
+![Ruuvi Station App Gateway](https://xdk2mam.io/assets/images/ruuvitag_2x.png)
 
+To continue, we need to specify a Gateway so the app knows where to send the data. We head to App Settings and in **Gateway Settings** we enter our notebook IP with the port chosen at server.js and the endpoint /sensors. So, for our case it would be **192.168.1.10:8080/sensors**
+
+![Ruuvi Station App Gateway](https://xdk2mam.io/assets/images/ruuvitag_3.png)
+
+
+That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle. First root is [HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIBRXSIDFFMLFFONTCYRXVUFKDLWFOCMS](https://thetangle.org/mam/HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIB) and has already been published as you can see if you follow the link
+
+![Data on Console](https://xdk2mam.io/assets/images/ruuvi_console_gateway.png)
 
 
