@@ -48,7 +48,7 @@ To continue, we need to specify a Gateway so the app knows where to send the dat
 ![Ruuvi Station App Gateway](https://xdk2mam.io/assets/images/ruuvitag_3.png)
 
 
-That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle. First root is [HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIBRXSIDFFMLFFONTCYRXVUFKDLWFOCMS](https://thetangle.org/mam/HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIB) and has already been published as you can see if you follow the link
+That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle. First root is [HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIBRXSIDFFMLFFONTCYRXVUFKDLWFOCMS](https://thetangle.org/mam/HFKVRYBY9OOPZ9LEPZ9BUGQNCCBUTNZICHOLFNVCYQ9LXPXGYIB) and has already been published to the Tangle as you can see if you follow the link.
 
 ![Data on Console](https://xdk2mam.io/assets/images/ruuvi_console_gateway.png)
 
