@@ -45,5 +45,7 @@ Despite our beacon has the **B** and **R** next to the tinty buttons, some may n
 ![RuuviTag B button](https://iotool.io/images/ruuvitag/schema.png)
 
 
+That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle. First root is [ALETSSEY9BVYSIE9BRHNXDYXYDTO9ZEORQDQVPOFQKPWGLOIY9TRIKWDXBCVCUZIIQTHQCFJJCVKZXBWK](https://thetangle.org/mam/ALETSSEY9BVYSIE9BRHNXDYXYDTO9ZEORQDQVPOFQKPWGLOIY9TRIKWDXBCVCUZIIQTHQCFJJCVKZXBWK) and has already been published to the Tangle as you can see if you follow the link.
 
+![Data on Console](https://xdk2mam.io/assets/images/ruuvi_console_direct.png)
 
