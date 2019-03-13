@@ -3,6 +3,7 @@ const BeaconScanner = require('node-beacon-scanner');
 var base64_decode = require('./decode/base64.js')
 var base91 = require('base91');
 var crypto = require('crypto');
+var colors = require('colors');
 
 let sensordata = require('xdk2mam');
 var IOTA = require('iota.lib.js');
@@ -11,7 +12,7 @@ var Mam = require('./node_modules/xdk2mam/mam.client.js');
 
 // Enter your Node URL and port (be sure to use a node with PoW enabled)
 let iota = new IOTA({
-	'provider': 'https://mama.iota.family:14267'
+	'provider': 'https://papa.iota.family:14267'
 });
 
 const INTERVAL_IN_MS = process.argv[2];
@@ -39,10 +40,10 @@ scanner.onadvertisement = async (advertisement) => {
 	
 	if(sem){
 		sem=false;
-		const info = parseAndDisplayData(advertisement);		
-		console.log(JSON.stringify(info))
+		const info = parseAndDisplayData(advertisement);			
 		await sensordata.saveDataAndPrintRoot(JSON.stringify(info),mamState,iota).then(ms => {
-			mamState = ms;			
+			mamState = ms;
+			console.log('')		
 		});	
 	}		
 }
@@ -97,6 +98,17 @@ function parseAndDisplayData(advertisement) {
 				     timestamp: Math.floor(Date.now() / 1000),
 				     device: idRuuvi,
 				 	 rssi: rssi}
+
+	console.log('*****************************************************************');
+    console.log('** Temperature: ', colors.green.bold(xdk2mam.sensor[0].Temperature));
+    console.log('** Humidity: ', colors.green.bold(xdk2mam.sensor[1].Humidity));
+    console.log('** Pressure: ', colors.green.bold(xdk2mam.sensor[2].Pressure));
+    console.log('** Timestamp: ', colors.green.bold(xdk2mam.timestamp));
+    console.log('** Device: ', colors.green.bold(xdk2mam.device));
+	console.log('** Rssi: ', colors.green.bold(xdk2mam.rssi));
+	console.log('*****************************************************************');
+    
+
 
 	 return xdk2mam
 }

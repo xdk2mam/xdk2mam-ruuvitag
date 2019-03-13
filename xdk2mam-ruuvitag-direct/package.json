@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "base91": "0.0.5",
+    "colors": "^1.3.3",
     "crypto": "^1.0.1",
     "iota.lib.js": "^0.4.7",
     "noble": "^1.9.1",
