@@ -7,7 +7,7 @@ This approach has it pros and cons: while you do not need to deal with Noble to 
 So, let's start by downloading the [Rubi Station](https://play.google.com/store/apps/details?id=com.ruuvi.station&hl=en) app and removing the plastic piece from the beacon batterie to turn it on.
 As soon as you start the app you will be able to add your beacon to see its sensors working live.
 
-![Ruuvi Station App](https://uner.edu.ar/public/imagen/ruuvistation1.png)
+![Ruuvi Station App](https://xdk2mam.io/assets/images/ruuvitag_1.png)
 
 This application gives the users the posibility to define a Gateway to which it will send the sensors data. Because we will be using our own computer as server to collect the app values, let's first setup the software required. 
 Our mobile phone and computer are connected to the same WiFi, so our laptop LAN ip (192.168.1.10, you should use yours) would be provided as Gateway. But first, let's set the Node.js server.
@@ -38,7 +38,7 @@ node server.js
 ```
 Now that we have our server listening at 192.168.1.10, let's head to the Ruuvi Station settings to define our Gateway 
 
-![Ruuvi Station App Gateway](https://uner.edu.ar/public/imagen/ruuvistation2.png)
+![Ruuvi Station App Gateway](https://xdk2mam.io/assets/images/ruuvitag_2.png)
 
 That's it! Check your console to see how the beacon sensor's data are printed together with the channel ids to verify that they are in deed published at the Tangle.
 
